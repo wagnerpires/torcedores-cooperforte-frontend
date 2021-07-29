@@ -4,7 +4,6 @@ import Button from "@material-ui/core/Button";
 import { Formik } from "formik";
 import React from "react";
 import TextField from "@material-ui/core/TextField";
-import Typography from "@material-ui/core/Typography";
 import { autenticar } from "../services/autenticacao-service";
 import { withRouter } from "react-router-dom";
 import { erro } from "./alerts/alertas";

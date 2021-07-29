@@ -1,7 +1,7 @@
 import "./FormTorcedor.css";
 
 import { FieldArray, Formik } from "formik";
-import { FormControl, Grid, InputLabel, MenuItem, FormLabel, RadioGroup, FormControlLabel, Radio } from "@material-ui/core";
+import { FormControl, Grid, InputLabel, MenuItem } from "@material-ui/core";
 import { atualizar, criar } from "../services/torcedores-service";
 import { erro, sucesso } from "./alerts/alertas";
 import {
@@ -147,7 +147,6 @@ class FormularioTorcedor extends React.Component {
   ) {
     const telefoneCadastrado = values.telefones.some(
       (telefone) =>
-        // telefone.telefone === maskJustNumbers(getFieldProps("celular").value)
         telefone.telefone === getFieldProps("celular").value
     );
 
@@ -518,7 +517,7 @@ class FormularioTorcedor extends React.Component {
                   </Link>
 
                   <Button type="submit" form="form1" variant="contained" color="primary" disabled={!isValid}>
-                    Cadastrar
+                    Salvar
                   </Button>
 
                   <Link to={"/"} className={classes.link}>

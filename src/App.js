@@ -12,7 +12,7 @@ import MainImage from './assets/images/logo.png';
 class App extends React.Component {
     render() {
         return (<div className="App">
-                <header className="App-header"><div className="App-logo-cooper"><img src={MainImage}/></div>Cadastro de Torcedores</header>
+                <header className="App-header"><div className="App-logo-cooper"><img src={MainImage} alt=""/></div>Cadastro de Torcedores</header>
                 <Switch>
                 <Route exact path={["/", "/login"]} component={Login}/>{" "}
                 <Route exact path={["/torcedores"]}
