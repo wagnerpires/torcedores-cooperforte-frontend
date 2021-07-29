@@ -40,7 +40,8 @@ github: https://github.com/wagnerpires/torcedores-cooperforte-backend
 * Ecossistema Spring: Jpa, SpringWeb, SpringDevTools, SpringSecurity
 * Material ui (Ui Framework)
 * Via Cep (API)
-* JUnit
+* JUnit 5
+* Kafka (mock)
 	
 
 
