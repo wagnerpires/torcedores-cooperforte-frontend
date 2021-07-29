@@ -2,7 +2,7 @@
 
 ## Para executar o projeto
 
-### `yarn`install
+###  yarn install
 ###  yarn start`
 
 Acessar a url [http://localhost:3000](http://localhost:3000) para navegar
