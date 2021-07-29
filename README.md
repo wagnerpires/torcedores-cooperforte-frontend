@@ -37,7 +37,7 @@ github: https://github.com/wagnerpires/torcedores-cooperforte-backend
 * DockerFile (Docker)
 * H2 Database
 * Maven
-* Ecossistema Spring: Jpa, SpringWeb, SpringDevTools, SpringSecurity
+* Ecossistema Spring
 * Material ui (Ui Framework)
 * Via Cep (API)
 * JUnit 5
