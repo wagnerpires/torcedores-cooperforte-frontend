@@ -97,8 +97,7 @@ class TorcedorLista extends React.Component {
                     </Typography>
                     <Typography>CPF: {maskCpf(torcedor.cpf)}</Typography>
                     <Typography>
-                      {torcedor.logradouro}{" "}{torcedor.complemento}{" "}{torcedor.cidade},{" "}
-                      {torcedor.bairro}{" "}{maskCep(torcedor.cep)}
+                      {torcedor.logradouro}{" "}{torcedor.complemento}{", "}{torcedor.bairro}{", "}{torcedor.cidade},{" "}{maskCep(torcedor.cep)}
                     </Typography>
                     <Typography></Typography>
                     <Box m={2}>
@@ -106,14 +105,12 @@ class TorcedorLista extends React.Component {
                         container
                         direction="row"
                         justify="center"
-                        alignItems="center"
-                      >
+                        alignItems="center">
                         <Grid>
                           <Box m={2}>
                             <Badge
                               badgeContent={torcedor.emails.length}
-                              color="primary"
-                            >
+                              color="primary">
                               <MailIcon />
                             </Badge>
 
@@ -122,8 +119,7 @@ class TorcedorLista extends React.Component {
                             torcedor.emails.map((email) => (
                                 <Typography
                                   key={email.id}
-                                  color="textSecondary"
-                                >
+                                  color="textSecondary">
                                   {email.email}
                                 </Typography>
                               ))}
@@ -133,8 +129,7 @@ class TorcedorLista extends React.Component {
                           <Box m={2}>
                             <Badge
                               badgeContent={torcedor.telefones.length}
-                              color="primary"
-                            >
+                              color="primary">
                               <PhoneIcon />
                             </Badge>
                             {torcedor &&
